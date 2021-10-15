@@ -1,0 +1,204 @@
+@font-face {
+  font-family: SF Pro Display;
+  font-weight: 400;
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SF Pro Display;
+  font-weight: 700;
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: SF Pro Display, Arial, sans-serif;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.bg {
+  position: relative;
+  max-width: 860px;
+  height: auto;
+  background: linear-gradient(180deg, #019da4 0%, #02798a 52.08%, #c79d09 100%);
+  display: flex;
+  flex-direction: column;
+}
+.bg-svg {
+  position: absolute;
+  width: 642px;
+  height: 643px;
+  left: 399px;
+  top: 180px;
+
+  opacity: 0.2;
+}
+.logo-link {
+  max-width: 154px;
+  margin-left: 71px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.title {
+  max-width: 687px;
+  margin-left: 78px;
+  margin-bottom: 130px;
+  margin-right: 5px;
+}
+.bg-comp {
+  bottom: 0;
+}
+
+.comp-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.form {
+  max-width: 580px;
+  z-index: 10;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 125px;
+  margin-left: 113px;
+}
+
+.form-title {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #192a3e;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.form-title_color {
+  color: #019da4;
+}
+.form-title-text {
+  margin-bottom: 40px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
+}
+
+.form-groups {
+  max-width: 377px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 16px;
+}
+input {
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border: 1px solid #ebeff2;
+  border-radius: 8px;
+  padding: 26px 15px;
+  font-family: SF Pro Display;
+}
+
+.form-input ::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #192a3e;
+}
+
+.form-label {
+  font-family: SF Pro Display;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+.form-input:active,
+.form-input:hover {
+  border: 1.5px solid #019da4;
+}
+
+.form-btn {
+  width: 100%;
+  height: 50px;
+  background: #019da4;
+  border-color: #019da4;
+  border-radius: 8px;
+
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+@media(max-width:1056px) {
+  .form {
+   width: 50%;
+  }
+  .bg{
+    width: 50%;
+  }
+}
+
+.login-link{
+  display: inline-block;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+ /* identical to box height */
+
+ letter-spacing: 0.01em;
+
+  color: #8890A6;
+}
+.login-span{
+  color: #019DA4;
+}
