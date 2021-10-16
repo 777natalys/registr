@@ -143,6 +143,7 @@ input {
   border-radius: 8px;
   padding: 26px 15px;
   font-family: SF Pro Display;
+  cursor: pointer;
 }
 
 .form-input ::placeholder {
@@ -253,23 +254,35 @@ input {
 }
     /*form mobal*/
 .form-mobal{
+  width: 375px;
   background: #F5F6F8;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  margin: 0 auto;
 } 
 .form-wrapper-mobal{
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 120px;
   margin-left: 16px;
   margin-right: 16px;
   align-items: center;
   max-width: 375px;
 } 
 
-.form-input-mobal{
-  border: 1px solid #C2CFE0;
+.form-title-mobal{
+  font-size: 32px;
+  line-height: 125%;
 }
 
-.password{
+.form-input-mobal{
+  border: 1px solid #C2CFE0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #8890A6;
+}
+
+.password,
+.googlin {
   position: relative;
 }
 .password-control{
@@ -282,16 +295,37 @@ input {
   color: #BDBDBD;
   background: url(/img/oko.svg) 0 0 no-repeat;
 }
+
+.googlin{
+  align-items: center;
+}
+.googlIcon{
+  position: absolute;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 125%;
+  color: #181746;
+}
+
+.googlin-img,
+.googlin-text{
+  vertical-align: middle;
+}
+
  .form-title-text{
    overflow: hidden;
    text-align: center;
    margin-bottom: 6px;
  }
 
+ .googlIcon:hover{
+   color: #019da4;
+ }
+
  .form-title-text span {
    display: inline-block;
    vertical-align: middle;
-   margin-bottom: 6px;
+   margin-bottom: 0;
    font-family: SF Pro Display;
    font-style: normal;
    font-weight: 600;
@@ -319,12 +353,12 @@ input {
 
  .form-title-text::before{
    margin-left: -100%;
-   left: -14px;
+   left: -16px;
  }
 
  .form-title-text::after{
    margin-right: -100%;
-   right: -14px;
+   right: -16px;
  }
 
  .login{
