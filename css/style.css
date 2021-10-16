@@ -201,7 +201,6 @@ input {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
 
   letter-spacing: 0.01em;
 
@@ -423,4 +422,54 @@ input {
 .login {
   text-align: center;
   width: 100%;
+}
+
+/* form-login checkbox*/
+.custom-checkbox{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+.label-checkbox{
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+.label-checkbox::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #8890A6;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:not(:disabled):not(:checked)+.label-checkbox:hover::before{
+  border: 1.5px solid #019DA4;
+}
+
+.custom-checkbox:not(:disabled):not(:checked)+.label-checkbox::before{
+  border: 1.5px solid #8890A6;
+}
+
+.custom-checkbox:checked+.label-checkbox::before{
+  border: 1.5px solid #019DA4;
+  background-color: #019DA4;
+  background-image: url(/img/checked.svg);
+}
+
+.label-checkbox{
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.01em;
+
+  color: #8890A6;
 }
