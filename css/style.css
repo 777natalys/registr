@@ -94,6 +94,10 @@ h1 {
   margin-left: 113px;
 }
 
+.form-wrapper-login{
+  margin-top: 245px;
+}
+
 .form-title {
   font-family: SF Pro Display;
   font-style: normal;
@@ -146,7 +150,7 @@ input {
   cursor: pointer;
 }
 
-.form-input ::placeholder {
+.form-input::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -206,6 +210,10 @@ input {
 .login-span {
   color: #019da4;
   border-bottom: solid 1px #019da4;
+}
+
+.login-link-margin{
+  margin-bottom: 20px;
 }
 
 @media (max-width: 412px) {
@@ -363,7 +371,7 @@ input {
   vertical-align: middle;
 }
 
-.form-title-text {
+.form-text-line {
   overflow: hidden;
   text-align: center;
   margin-bottom: 6px;
@@ -373,7 +381,7 @@ input {
   color: #019da4;
 }
 
-.form-title-text span {
+.form-text-line span {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0;
@@ -389,8 +397,8 @@ input {
   color: #8890a6;
 }
 
-.form-title-text::before,
-.form-title-text::after {
+.form-text-line::before,
+.form-text-line::after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -402,12 +410,12 @@ input {
   vertical-align: middle;
 }
 
-.form-title-text::before {
+.form-text-line::before {
   margin-left: -100%;
   left: -16px;
 }
 
-.form-title-text::after {
+.form-text-line::after {
   margin-right: -100%;
   right: -16px;
 }
