@@ -209,7 +209,14 @@ input {
   line-height: 17px;
   color: #fff;
   margin-bottom: 16px;
+  cursor: pointer;
 }
+
+.form-btn:hover{
+  background-color: #017f8e;
+}
+
+
 @media (max-width: 1056px) {
   .form {
     width: 50%;
@@ -251,11 +258,25 @@ input {
 
 @media(max-width: 780px){
  .form{
-  width: 50%;
-  position: fixed;
-  right: 0;
+  width: 70%;
   background-color: #fff;
-  min-width: 410px;
+  min-width: 380px;
+ }
+
+ .form-title{
+  font-size: 20px;
+  line-height: 25px;
+ }
+ .form-title-text{
+   font-size: 14px;
+ }
+ .form-input{
+   height: 30px;
+   padding: 20px 15px;
+ }
+
+ .bg{
+   width: 30%;
  }
 }
 
@@ -270,10 +291,16 @@ input {
   letter-spacing: 0.01em;
 
   color: #8890a6;
+  cursor: pointer;
 }
 .login-span {
   color: #019da4;
   border-bottom: solid 1px #019da4;
+}
+
+.login-link:hover,
+.login-span:hover{
+  color: #017f8e;
 }
 
 .login-link-margin{
@@ -353,6 +380,7 @@ input {
   margin-left: 25px;
   margin-top: 35px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 .logo-img-modal {
   width: 106.04px;
@@ -372,6 +400,7 @@ input {
 .btn-modal{
   margin: 30px 16px;
   display: block;
+  cursor: pointer;
 }
 
 
