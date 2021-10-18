@@ -30,6 +30,8 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -43,8 +45,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'SF Pro Display', Arial, sans-serif;
+  font-size: 14px;
 }
 .container {
+  max-width: 1440px;
+  max-height: 900px;
   display: flex;
   width: 100%;
   height: auto;
@@ -61,8 +66,8 @@ body {
 }
 .bg-svg {
   position: absolute;
-  width: 642px;
-  height: 643px;
+  max-width: 642px;
+  max-height: 643px;
   left: 399px;
   top: 180px;
 
@@ -82,10 +87,13 @@ body {
   margin-right: 5px;
 }
 .bg-comp {
+  max-width: 821px;
+  max-height: 464px;
   bottom: 0;
 }
 
 .comp-svg {
+  
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -107,21 +115,21 @@ h1 {
 .form {
   max-width: 580px;
   z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .form-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  margin-top: 125px;
-  margin-left: 110px;
+ /* margin-top: 20%;125px*/
+  margin-left: 20%;/*110px*/
   margin-right: 5px;
   margin-bottom: 5px;
 }
 
-.form-wrapper-login{
-  margin-top: 245px;
-}
 
 .form-title {
   font-family: 'SF Pro Display';
@@ -170,7 +178,7 @@ input {
   border: none;
   border: 1px solid #ebeff2;
   border-radius: 8px;
-  padding: 26px 15px;
+  padding: 0 26px;
   font-family: 'SF Pro Display';
   cursor: pointer;
 }
